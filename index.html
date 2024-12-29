@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="favicons/apple-touch-icon">
+    <link rel="manifest" href="manifest.webmanifest">
+    <title>Вики Сайт - Главная</title>
+
+   
+      
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        .auth-form input, .auth-form button {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .auth-form button {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        /*стили для auth-form уже есть в прошлых версиях*/
+         #auth-status {
+            margin-left: auto;
+            font-weight: bold;
+         }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать на вики сайт по селл лабу!</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="orgi.html">Орги</a>
+    <a href="mods.html">Моды</a>
+    <span id="auth-status" style="margin-left: auto;"></span>
+  </nav>
+
+<div class="content">
+    <img src="images/logo.jpg" class="styled-image" alt="logo" width="800" height="200">
+    <p><strong>Добро пожаловать на наш сайт, посвященный модам и организмам в уникальной игре Селл Лаб!</strong> Здесь вы найдете обширную информацию о различных модификациях, которые значительно расширяют возможности игры и добавляют новые интересные элементы в мир клеточной биологии.</p>
+    <p><strong>Что такое Селл Лаб?</strong></p>
+    <p>Селл Лаб — это увлекательная игра, в которой игроки могут создавать и управлять собственными организмами в микроскопическом мире. Используя различные гены и модификации, игроки могут экспериментировать с формами жизни, исследовать окружающую среду и взаимодействовать с другими клетками. Однако, чтобы сделать игру еще более захватывающей, сообществом разработаны многочисленные модификации, которые добавляют новые функции, возможности и механики.</p>
+    <p><strong>Что такое моды?</strong></p>
+    <p>Моды (или модификации) — это пользовательские дополнения, которые изменяют или улучшают оригинальный контент игры. Они могут добавлять новые организмы, изменять существующие механики, улучшать графику, а также вводить новые уровни сложности. Каждый мод создается с уникальным набором характеристик,<br/> что позволяет игрокам находить именно те модификации,которые нужны им. </p>
+
+    <div id="auth-section">
+        <h2>Регистрация</h2>
+        <form id="register-form" class="auth-form">
+            <input type="text" id="register-username" placeholder="Логин" required>
+            <input type="password" id="register-password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <h2>Вход</h2>
+        <form id="login-form" class="auth-form">
+            <input type="text" id="login-username" placeholder="Логин" required>
+            <input type="password" id="login-password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+ <footer >
+    Cell lab love
+    <button id="clear-data" style="display: none;">Очистить данные</button>
+
+  </footer>
+    <script src="comment.js"></script>
+</body>
+</html>
