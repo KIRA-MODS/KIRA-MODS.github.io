@@ -1,0 +1,137 @@
+
+/* Общие стили */
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2f6ff;
+    min-height: 100vh; /* Убедитесь, что высота страницы будет занимать всю доступную высоту */
+    display: flex;
+    flex-direction: column; /* Позволяет футеру оставаться внизу */
+}
+
+/* Заголовок */
+header {
+    background-color: #3ac1ff;
+    color: white;
+    text-align: center;
+    padding: 25x;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+/*стили для auth-form и auth-status уже есть в прошлых версиях*/
+.comment button{
+    margin-left:10px;
+      padding: 5px 10px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+     cursor: pointer;
+ 
+ }
+/*стили для auth-form , auth-status и  .comment button уже есть в прошлых версиях*/
+#clear-data {
+    display: inline-block; /* По умолчанию кнопка скрыта */
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#clear-data:hover {
+    background-color: #d32f2f;
+}
+ 
+
+/* Навигация */
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+nav a {
+    margin: 0 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2575fc;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #eaeaea;
+    transform: scale(1.2);
+}
+
+/* Контент */
+.content {
+    flex: 1; /* Позволяет контенту занимать оставшееся пространство */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content h2,
+.content h3 {
+    color: #2575FC;
+    font-weight: bold;
+}
+
+.mod-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 3px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: fixed; /* Фиксированное положение */
+    bottom: 0; /* Прикреплено к низу */
+    left: 0; /* Прикреплено к левому краю */
+    right: 0; /* Прикреплено к правому краю */
+}
+
+header {
+    text-align: center; /* Центрируем заголовок */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+nav {
+    text-align: center; /* Центрируем навигацию */
+}
+
+.content {
+    max-width: 900px; /* Ограничиваем максимальную ширину контента */
+    margin: auto; /* Выравниваем по центру экрана */
+    padding: 20px; /* Добавляем внутренние отступы для контента */
+}
+
+.styled-image {
+   border: 5px solid #c0f0ff; /* Цвет рамки (синий) и толщина (5 пикселей)*/
+   border-radius: 20px; /* Закругленные углы рамки */
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Тень под изображением для эффекта "поднятости" */
+   display: block;
+   margin-left:auto;
+   margin-right:auto;
+} 
+
+footer {
+     text-align:center;
+     margin-top:20px;
+}
